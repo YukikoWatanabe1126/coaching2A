@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>動物一覧</title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>名前</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="animal:${animals}">
+				<td th:text=${animal.id}></td>
+				<td th:text=${animal.name}></td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>
